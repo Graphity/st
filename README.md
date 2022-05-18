@@ -9,13 +9,20 @@ updated to latest version 0.8.5
 * [font2](https://st.suckless.org/patches/font2/)
 * [scrollback](https://st.suckless.org/patches/scrollback/)
 * [scrollback-mouse](https://st.suckless.org/patches/scrollback/)
-* [xresources](https://st.suckless.org/patches/xresources/)
+* [xresources-with-reload-signal](https://st.suckless.org/patches/xresources-with-reload-signal/)
 
 ## Extra features (using dmenu) copied from [Luke's build](https://github.com/lukesmithxyz/st)
 
 * **follow urls** by pressing `alt-shift-l`
 * **copy urls** in the same way with `alt-y`
 * **copy the output of commands** with `alt-o`
+
+## Xresources live-reload
+```
+# example
+
+xrdb ~/.Xresources && kill -USR1 $(pidof st)
+```
 
 ## Bindings
 * **scroll ↑/↓ by line:** `alt-p/n`
